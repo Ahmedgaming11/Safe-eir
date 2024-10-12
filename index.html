@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>محرك بحث آمن</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body dir="rtl">
+  <header>
+    <h1>محرك البحث الآمن</h1>
+    <p>تصفح بأمان مع نتائج موثوقة</p>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>البحث</h2>
+      <input type="text" id="urlInput" placeholder="أدخل رابط الموقع المراد تصفحه" aria-label="رابط الموقع">
+      <button onclick="search()">بحث</button>
+    </section>
+
+    <div class="output">
+      <p id="output">ستظهر النتيجة هنا...</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 محرك البحث الآمن - جميع الحقوق محفوظة</p>
+  </footer>
+
+  <script>
+    function search() {
+      const url = document.getElementById("urlInput").value;
+      window.location.href = `/search?q=${encodeURIComponent(url)}`;
+    }
+  </script>
+</body>
+</html>
