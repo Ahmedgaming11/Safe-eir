@@ -1,0 +1,15 @@
+{
+  "name": "secure-proxy",
+  "version": "1.0.0",
+  "description": "محرك بحث آمن",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "http-proxy": "^1.18.1",
+    "crypto-js": "^4.0.0",
+    "dotenv": "^10.0.0"
+  }
+}
